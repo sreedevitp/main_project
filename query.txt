@@ -1,0 +1,17 @@
+CREATE TABLE `login` (
+ `username` varchar(25) NOT NULL,
+ `password` varchar(25) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1
+
+
+
+CREATE TABLE `registration` (
+ `uid` int(11) NOT NULL AUTO_INCREMENT,
+ `fname` varchar(30) DEFAULT NULL,
+ `lname` varchar(10) DEFAULT NULL,
+ `email` varchar(15) DEFAULT NULL,
+ `mobile` varchar(10) DEFAULT NULL,
+ `password` varchar(20) DEFAULT NULL,
+ `confirm_password` varchar(20) DEFAULT NULL,
+ PRIMARY KEY (`uid`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1
